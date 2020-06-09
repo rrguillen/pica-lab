@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pica-Lab</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://kit.fontawesome.com/5a14a677aa.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+         <!-- navbar -->
+        <header>
+            <nav class="fixed-top">
+                <a id="picaLabLogo"  href="#home" onclick="toggleOff()"><img id="small-logo" src="img/PicaLab_logo.png" ></a>
+                <div class="linksOnLarge">
+                    <a href="#shop">PRODUCT <i class="fab fa-hotjar"></i></a>
+                    <a href="#about">ABOUT <i class="fas fa-microscope"></i></a>
+                    <a href="#contact" >CONTACT <i class="fa fa-envelope"></i></a>
+                </div>
+                <a class="bars" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+            <!-- Navbar on small screens -->
+            <div id="navOnSmall" class="navOnSmallContainer">
+                <a href="#shop" class="linksOnSmall" onclick="toggleFunction()">PRODUCT</a>
+                <a href="#about" class="linksOnSmall" onclick="toggleFunction()">ABOUT</a>
+                <a href="#contact" class="linksOnSmall" onclick="toggleFunction()">CONTACT</a>
+            </div><!-- /Navbar on small screens -->
+            <div id="landingPage">
+                <div class="mainHeader">
+                    <h1>Welcome to</h1>
+                    <img id="logotipo" src="img/PicaLab_logotipo.png" >
+                    <h2>Our mission is to enhance your food with delicious salsa</h2>
+                    <div id="mainButton">
+                        <a href="#shop">View our Products</a>
+                    </div>
+                </div>   
+            </div>
+        </header>
+        <!-- /navbar -->
+        
+        <script src="js/main.js"></script>
+    </body>
+</html>

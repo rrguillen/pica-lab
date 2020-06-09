@@ -1,0 +1,176 @@
+/* html {
+  scroll-behavior: smooth;
+} */
+
+html, body {
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.8;
+    background-color: rgb(124, 122, 122);
+    color: white;
+    display: block;
+}
+/* #landingPage {
+  background-image: url(../img/cutting-boar.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.55;
+  min-height: 100vh;
+  z-index: -1;
+} */
+#small-logo {
+    height: 3em;
+    width: 8em;
+    z-index: 2;
+    margin-left: 5%;
+}
+
+/* ======= navbar styles ======= */
+.fixed-top {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background: #333;
+  flex-wrap: nowrap;
+  z-index: 2;
+}
+
+header a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: white
+}
+ .linksOnLarge {
+  display: none;
+  list-style: none;
+  padding: 10px 15px;
+  
+}
+.linksOnLarge a {
+  display: inline-block;
+  font-size: x-large;
+}
+.linksOnLarge a i {
+  font-size: medium;
+}
+
+.bars {
+  margin-left: auto;
+  margin-right: 2%;
+  clear: right;
+  font-size: xx-large;
+  color: white;
+}
+.navOnSmallContainer {
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding-top: 78px;
+}
+
+.onSmallLinks {
+  display: flex;
+  flex-direction: column;
+  background: black;
+}
+
+.linksOnSmall:hover {
+  background: #333;
+}
+
+#landingPage {
+  background-image: url("../img/cutting-boar.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.75;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+.mainHeader {
+  padding: 80px 10%;
+  z-index: 2;
+  text-align: center;
+  font-size: 1em;
+  opacity: 1;
+}
+
+.mainHeader p {
+  font-size: medium;
+  font-weight: bolder;
+}
+
+#logotipo {
+  height: 16em;
+  width: 20em;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 40px;
+  opacity: 1;
+  /* padding-top: 40px; */
+}
+
+
+#mainButton{
+  font-size: large;
+  font-weight: bold;
+  height: 3em;
+  width: 11em;
+  background-color: black;
+  margin: 20px auto;
+  border-radius: 3%;
+  display: flex;
+}
+#mainButton:hover {
+  background-color: #333;
+  
+}
+
+#mainButton a {
+  padding: auto;
+}
+/* #mainButton a:hover {
+  color: black;
+} */
+/* ======= /navbar styles ======= */
+
+
+/* ======= footer ======= */
+footer {
+  text-align: center;
+  background: #0e1111;
+  z-index: -1;
+  padding-top: 30px;
+  color: #fff;
+}
+
+/* ======= @media queries ======= */
+@media (min-width: 777px) {
+  .bars {
+    display:none;
+  }
+  .linksOnLarge {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+}
+@media (min-width: 990px) {
+  h1{
+    font-size: 64px;
+  }
+  .mainHeader {
+    padding: 60px 20%;
+  }
+  
+}
