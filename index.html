@@ -6,41 +6,133 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Pica-Lab</title>
         <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500;600;800&family=Merriweather:wght@900&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/5a14a677aa.js" crossorigin="anonymous"></script>
     </head>
     <body>
-         <!-- navbar -->
         <header>
-            <nav class="fixed-top">
-                <a id="picaLabLogo"  href="#home" onclick="toggleOff()"><img id="small-logo" src="img/PicaLab_logo.png" ></a>
-                <div class="linksOnLarge">
-                    <a href="#shop">PRODUCT <i class="fab fa-hotjar"></i></a>
-                    <a href="#about">ABOUT <i class="fas fa-microscope"></i></a>
-                    <a href="#contact" >CONTACT <i class="fa fa-envelope"></i></a>
+            <!-- navbar -->
+            <nav>
+                <div class="fixed-top">
+                    <a id="picaLabLogo"  href="#landingPage" onclick="toggleOff()"><img id="small-logo" src="img/PicaLab_logo.png" ></a>
+                    <div class="linksOnLarge">
+                        <a href="#store">PRODUCT    <i class="fab fa-hotjar"></i></a>
+                        <a href="#about">ABOUT <i class="fas fa-microscope"></i></a>
+                        <a href="#contact" >CONTACT    <i class="fa fa-envelope"></i></a>
+                    </div>
+                    <a class="bars" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    </div>
+                <!-- Navbar on small screens -->
+                <div id="navOnSmall" class="navOnSmallContainer">
+                    <a href="#store" class="linksOnSmall" onclick="toggleFunction()">PRODUCT    <i class="fab fa-hotjar"></i></a>
+                    <a href="#about" class="linksOnSmall" onclick="toggleFunction()">ABOUT <i class="fas fa-microscope"></i></a>
+                    <a href="#contact" class="linksOnSmall" onclick="toggleFunction()">CONTACT    <i class="fa fa-envelope"></i></a>
                 </div>
-                <a class="bars" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-                    <i class="fa fa-bars"></i>
-                </a>
+                <!-- /Navbar on small screens -->
             </nav>
-            <!-- Navbar on small screens -->
-            <div id="navOnSmall" class="navOnSmallContainer">
-                <a href="#shop" class="linksOnSmall" onclick="toggleFunction()">PRODUCT</a>
-                <a href="#about" class="linksOnSmall" onclick="toggleFunction()">ABOUT</a>
-                <a href="#contact" class="linksOnSmall" onclick="toggleFunction()">CONTACT</a>
-            </div><!-- /Navbar on small screens -->
-            <div id="landingPage">
+            <!-- /navbar -->
+            <section id="landingPage" class="background-img">
                 <div class="mainHeader">
                     <h1>Welcome to</h1>
-                    <img id="logotipo" src="img/PicaLab_logotipo.png" >
+                    <figure>
+                        <img id="logotipo" src="img/PicaLab_logotipo.png" alt="Pica-lab logo">
+                    </figure>
                     <h2>Our mission is to enhance your food with delicious salsa</h2>
                     <div id="mainButton">
-                        <a href="#shop">View our Products</a>
+                        <a href="#store">View our Products</a>
                     </div>
                 </div>   
-            </div>
+            </section>
         </header>
-        <!-- /navbar -->
-        
+
+        <section id="store">
+            <div id="store-header" class="background-img">
+                <h2>OUR PRODUCTS</h2>
+            </div>
+
+            <article id="our-products" class="article-section">
+                <h4 id="first-rule">The first rule of pica-lab is that there are no limits to your imagination. Our products aim to enhance your own creations and ignite experimentation. </h4>
+                <div>
+                    <figure>
+                        <img src="img/pica-green-jar.png" alt="Pica-green-jar" />
+                        <figcaption style="color:green">Pica-Green</figcaption>
+                    </figure>
+                    <p>Inspired by our love of asadero, Pica-green is a citric and tomatillo based salsa. Enjoy with almost anything, this delicious salsa adds a fiery taste to any food creation.</p>
+                </div>  
+                
+                <div>
+                    <figure>
+                        <img src="img/pica-green-jar.png" alt="Pica-red-jar" />
+                        <figcaption style="color:red">Pica-Red</figcaption>
+                    </figure>
+                    <p>Inspired by our love of chile de arbol, Pica-red  demands respect. This delicious blend of peppers and smoked tomatoes adds the needed spice to any food creations.</p>
+                </div>
+
+                <div>
+                    <figure>
+                        <img src="img/pica-green-jar.png" alt="Pica-flakes-jar" />
+                        <figcaption style="color:orangered">Pica-Flakes</figcaption>
+                    </figure>
+                    <p>Inspired by asian cuisine, Pica-flakes is an avocado oil infused pepper chilli. Excellent to directly condiment any creation, and for use as cooking oil, or marinating aid. </p>
+                </div>
+            </article>   
+        </section>
+
+        <section id="about">
+            <div>
+                <h2>ABOUT US</h2>
+            </div>
+            <article id="about-welcome" class="article-section">
+                <h3>Welcome you to our website!</h3>
+
+                <p>This space was created thinking about you, our customer. Our aim for this website is to stay in touch with you.
+                    Pica-Lab is a family-owned micro-salsa company based in San Diego, California. At pica-lab we pride ourselves 
+                    on the quality of our work, and we believe all food can be enhanced with the use of our products. Our salsas 
+                    are made with fresh, natural ingredients, and free from conservatives. Our unique methods of crafting salsa 
+                    capture the traditional flavors of smoke and fire.
+                <br/>We appreciate your visit to the Pica-Lab website. We encourage you to contact us about any doubt or suggestion.
+                <br/>Hungrily,<br>
+                    Efren Sandoval<br>
+                    Owner and Cook</p>
+                <div id="mission-vison">
+                   <article id="mission">
+                        <div>
+                            <h3>Our mission</h3>
+                            <p>To enhance your food flavor with delicious salsa.</p> 
+                        </div>
+                    </article> 
+                    <article id="vision">
+                        <div>
+                            <h3>Our Vision</h3>
+                            <p>For our products to be recognized for their high-quality standards.</p> 
+                        </div>
+                    </article> 
+                </div>
+                
+            </article>
+        </section>
+
+        <section id="contact">
+            <div>
+                <h2>CONTACT US</h2>
+            </div>
+            <article class="article-section">
+                <p>For us it is important to hear from our customers. For questions and inquiries 
+                    please contact us at <br/>contact@pica-lab.com <br/>and one of our representatives will contact you as soon as possible.</p>
+            </article>
+        </section>
+
+        <footer>
+            <section id="social-icons">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </section>
+            <small>&copy; 2020 Pica-Lab</small>
+        </footer>
+
         <script src="js/main.js"></script>
     </body>
 </html>
