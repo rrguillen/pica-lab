@@ -1,31 +1,24 @@
-/* html {
+html {
   scroll-behavior: smooth;
-} */
+}
 
 html, body {
     margin: 0; 
     padding: 0; 
     font-family: 'Dosis', sans-serif;
     line-height: 1.8;
-    background-color: rgb(124, 122, 122);
+    background-color: rgb(240, 238, 238);
     color: white;
     display: block;
+    font-family: 'Catamaran', sans-serif;
 }
-/* #landingPage {
-  background-image: url(../img/cutting-boar.jpg);
+
+.background-img {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.55;
-  min-height: 100vh;
   z-index: -1;
-} */
-#small-logo {
-    height: 3em;
-    width: 8em;
-    z-index: 2;
-    margin-left: 5%;
 }
 
 /* ======= navbar styles ======= */
@@ -38,23 +31,37 @@ html, body {
   z-index: 2;
 }
 
+#small-logo {
+  height: 3em;
+  width: 8em;
+  z-index: 2;
+  margin-left: 5%;
+}
+
 header a {
   text-decoration: none;
-  padding: 10px 15px;
   color: white
 }
- .linksOnLarge {
+.linksOnLarge {
   display: none;
   list-style: none;
-  padding: 10px 15px;
   
 }
 .linksOnLarge a {
-  display: inline-block;
-  font-size: x-large;
+  display: flex;
+  font-size: large;
+  height: 100%;
+  width: 180px;
+  justify-content: center;
+  align-items: center;
 }
+
+.linksOnLarge a:hover {
+  background-color: black;
+}
+
 .linksOnLarge a i {
-  font-size: medium;
+  font-size: small;
 }
 
 .bars {
@@ -69,7 +76,7 @@ header a {
   position: fixed;
   width: 100%;
   z-index: 1;
-  padding-top: 78px;
+  padding-top: 58px;
 }
 
 .onSmallLinks {
@@ -81,16 +88,12 @@ header a {
 .linksOnSmall:hover {
   background: #333;
 }
-
+/* ======= /navbar styles ======= */
+/* ======= landing page   ======= */
 #landingPage {
-  background-image: url("../img/cutting-boar.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.75;
+  background-image: url(../img/cutting-boar3.jpg);
+  /* opacity: 0.75; */
   min-height: 100vh;
-  z-index: -1;
 }
 
 .mainHeader {
@@ -99,6 +102,7 @@ header a {
   text-align: center;
   font-size: 1em;
   opacity: 1;
+  font-family: 'Merriweather', serif;
 }
 
 .mainHeader p {
@@ -115,10 +119,9 @@ header a {
 h1 {
   font-weight: 800;
   font-size: 40px;
-  opacity: 1;
+  margin: 0
   /* padding-top: 40px; */
 }
-
 
 #mainButton{
   font-size: large;
@@ -127,25 +130,143 @@ h1 {
   width: 11em;
   background-color: black;
   margin: 20px auto;
+  border: 3px ridge #333;
   border-radius: 3%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 #mainButton:hover {
-  background-color: #333;
+  background-color: #333; 
+}
+
+/* ======= /landing page  ======= */
+/* =======  store    ======= */
+#store-header {
+  background-image: url(../img/fresh-ingridients2.jpg);
+  min-height: 250px;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+}
+#store-header h2 {
+  margin-top: 100px;
+  width: 300px;
+  background-color:white;
+  color: rgb(255, 81, 0);
+  font-weight: 900;
+  display: inline-block;
+  border-radius: 10%;
+}
+
+.article-section {
+  /* background-color: #333; */
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 500;
+  color: black;
+  background-color: rgb(240, 238, 238);
+}
+
+#first-rule {
+  margin: 50px 0 80px 0;
+  padding: 20px 0;
+  color: rgb(255, 81, 0);
+  font-size: 1.2em;
+  font-weight: 800;
+  background-color: white;
+  border-top: 5px solid #333;
+  border-bottom: 5px solid #333;
+}
+
+#our-products div {
+  /* border-top: 5px dotted #333; */
+  border-bottom: 5px dotted  #333;
+  margin: 50px 0 50px 0;
+  font-weight: 600;
+}
+
+#our-products img {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption {
+  width: 120px;
+  display: inline-block;
+  font-weight: 800;
+  background-color: white;
+  
+}
+ 
+#our-products p {
+  background-color: white;
+  padding: 20px 5px;
+  border: 1px dotted #333;
+}
+
+/* ======= /store    ======= */
+
+/* ======= about     ======= */
+
+#about {
+  margin-top: 100px;
+  padding-top: 15px;
+}
+
+#about div h2 {
+  background-color: black;
+  text-align: center; 
+  margin-top: 40px;
+  padding: 35px auto;
+
+}
+
+#about-welcome h3 {
+  margin: 50px 0 30px 0;
+  padding: 20px 0;
+  color: rgb(255, 81, 0);
+  font-size: 1.2em;
+  font-weight: 800;
+  background-color: white;
+  border-top: 5px solid #333;
+  border-bottom: 5px solid #333;
+}
+
+#about-welcome p {
+  background-color: white;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+/* ======= /about    ======= */
+
+/* ======= contact    ======= */
+
+#contact div h2 {
+  background-color: black;
+  text-align: center; 
+  margin-top: 40px;
+  padding: 35px auto;
+
+}
+
+#contact article p {
+  background-color: white;
+  margin: 50px auto;
+  padding: 20px 5px;
   
 }
 
-#mainButton a {
-  padding: auto;
-}
-/* #mainButton a:hover {
-  color: black;
-} */
-/* ======= /navbar styles ======= */
-
+/* ======= /contact   ======= */
 
 /* ======= footer ======= */
 footer {
+  height: 100px;
   text-align: center;
   background: #0e1111;
   z-index: -1;
@@ -154,7 +275,7 @@ footer {
 }
 
 /* ======= @media queries ======= */
-@media (min-width: 777px) {
+@media (min-width: 677px) {
   .bars {
     display:none;
   }
@@ -164,13 +285,43 @@ footer {
     width: 100%;
   }
 
+  #first-rule {
+    font-size: 1.5em;
+  }
+
+  #our-products p {
+    width: 600px;
+    margin: 10px auto;
+  }
+  #contact article p {
+    width: 660px;
+  }
 }
 @media (min-width: 990px) {
   h1{
     font-size: 64px;
+    margin-top: 50px;
   }
   .mainHeader {
     padding: 60px 20%;
   }
+
+  .article-section {
+    width: 80%;
+  }
+
+  #mission, #vision {
+    display: inline-block;
+    
+    width: 323px;
+  }
+
+  #mission {
+    margin-right: 20px;
+  } 
+  #vision {
+    margin-left: 20px;
+  }
+
   
 }
