@@ -139,7 +139,7 @@ h1 {
 /* =======  store    ======= */
 #store-header {
   background-image: url(../img/fresh-ingridients-mobile.png);
-  min-height: 250px;
+  min-height: 200px;
   text-align: center;
   font-size: x-large;
   font-weight: bolder;
@@ -183,14 +183,14 @@ h1 {
 }
 
 #our-products img {
-  width: 350px;
+  width: 300px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
 figcaption {
-  width: 350px;
+  width: 300px;
   display: inline-block;
   font-weight: 800;
   background-color: white;
@@ -282,6 +282,7 @@ footer {
     background-image: url(../img/fresh-ingridients2.jpg);
     background-attachment: fixed;
     background-size: cover;
+    /* min-height: 250px; */
   }
   .bars {
     display:none;
