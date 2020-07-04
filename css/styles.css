@@ -13,13 +13,7 @@ html, body {
     font-family: 'Catamaran', sans-serif;
 }
 
-.background-img {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-}
+
 
 /* ======= navbar styles ======= */
 .fixed-top {
@@ -91,7 +85,7 @@ header a {
 /* ======= /navbar styles ======= */
 /* ======= landing page   ======= */
 #landingPage {
-  background-image: url(../img/cutting-boar3.jpg);
+  background-image: url(../img/Background-re.jpg);
   /* opacity: 0.75; */
   min-height: 100vh;
 }
@@ -144,7 +138,7 @@ h1 {
 /* ======= /landing page  ======= */
 /* =======  store    ======= */
 #store-header {
-  background-image: url(../img/fresh-ingridients2.jpg);
+  background-image: url(../img/fresh-ingridients-mobile.png);
   min-height: 250px;
   text-align: center;
   font-size: x-large;
@@ -189,14 +183,14 @@ h1 {
 }
 
 #our-products img {
-  width: 120px;
+  width: 350px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
 figcaption {
-  width: 120px;
+  width: 350px;
   display: inline-block;
   font-weight: 800;
   background-color: white;
@@ -276,6 +270,19 @@ footer {
 
 /* ======= @media queries ======= */
 @media (min-width: 677px) {
+  .background-img {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  #store-header {
+    background-image: url(../img/fresh-ingridients2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+  }
   .bars {
     display:none;
   }
