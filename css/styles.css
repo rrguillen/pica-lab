@@ -138,8 +138,9 @@ h1 {
 /* ======= /landing page  ======= */
 /* =======  store    ======= */
 #store-header {
-  background-image: url(../img/fresh-ingridients-mobile.png);
+  background-image: url(../img/brasitas.png);
   min-height: 200px;
+  background-position: 0 100%;
   text-align: center;
   font-size: x-large;
   font-weight: bolder;
@@ -175,32 +176,42 @@ h1 {
   border-bottom: 5px solid #333;
 }
 
-#our-products div {
+.tarjeta {
   /* border-top: 5px dotted #333; */
-  border-bottom: 5px dotted  #333;
-  margin: 50px 0 50px 0;
+  /* border-bottom: 5px dotted  #333; */
+  background-color: white;
+  width: 250px;
+  margin: 50px auto;
   font-weight: 600;
 }
 
+
 #our-products img {
-  width: 300px;
+  width: 250px;
   height: auto;
-  display: block;
+  display: inline-block;
   margin: 0 auto;
 }
 
+#our-products figure {
+  border: 15px solid #333;
+  width: 250px;
+  margin: 20px auto;
+}
+
 figcaption {
-  width: 300px;
-  display: inline-block;
+  /* width: 250px; */
+  /* display: inline-block; */
+  /* padding-top: 30px; */
   font-weight: 800;
   background-color: white;
-  
+  margin: 0;
 }
  
-#our-products p {
+#our-products div p {
   background-color: white;
-  padding: 20px 5px;
-  border: 1px dotted #333;
+  /* width: 250px; */
+  margin: 0 auto;
 }
 
 /* ======= /store    ======= */
@@ -231,11 +242,17 @@ figcaption {
   border-bottom: 5px solid #333;
 }
 
+#about-welcome {
+  background-image: url(../img/replace-white.png);
+}
+
 #about-welcome p {
-  background-color: white;
+  /* background-color: white; */
+  font-weight: 800;
   margin: 0 auto;
   font-weight: 600;
 }
+
 
 /* ======= /about    ======= */
 
@@ -249,11 +266,21 @@ figcaption {
 
 }
 
+#contact-info {
+  background-image: url(../img/replace-white.png);
+}
+
 #contact article p {
-  background-color: white;
+  /* background-color: white; */
+  font-weight: 800;
   margin: 50px auto;
   padding: 20px 5px;
   
+}
+
+#contact em {
+  font-size: 1.5em;
+  color: rgb(255, 81, 0);
 }
 
 /* ======= /contact   ======= */
@@ -272,16 +299,19 @@ footer {
 @media (min-width: 677px) {
   .background-img {
     background-attachment: fixed;
-    background-position: center;
+    background-position: 0 100%;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
   }
 
   #store-header {
-    background-image: url(../img/fresh-ingridients2.jpg);
+    background-image: url(../img/brasotas.png);
     background-attachment: fixed;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
     background-size: cover;
+    bottom: 800px;
     /* min-height: 250px; */
   }
   .bars {
@@ -302,10 +332,21 @@ footer {
     font-size: 1.5em;
   }
 
-  #our-products p {
-    width: 600px;
-    margin: 10px auto;
+  .tarjeta {
+    width: 500px;
   }
+
+  #our-products figure {
+    display: flex;
+    width: 500px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+
   #contact article p {
     width: 660px;
   }
@@ -321,6 +362,18 @@ footer {
 
   .article-section {
     width: 80%;
+  }
+
+  .tarjeta {
+    width: 700px;
+  }
+
+  #our-products figure {
+    width: 700px;
+  }
+
+  #our-products img {
+    width: 350px;
   }
 
   #mission, #vision {
