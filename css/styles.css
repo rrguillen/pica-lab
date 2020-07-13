@@ -288,9 +288,9 @@ footer {
 }
 /* ======= @media queries ======= */
 @media (min-width: 677px) {
-  #landingPage {
+  /* #landingPage {
     background-image: url(../img/Background-re.jpg);
-  }
+  } */
 
   .background-img {
     background-attachment: fixed;
