@@ -7,9 +7,10 @@ html, body {
     padding: 0; 
     font-family: 'Dosis', sans-serif;
     line-height: 1.8;
-    background-color: rgb(240, 238, 238);
+    /* background-color: rgb(240, 238, 238); */
     color: white;
     display: block;
+    background-image: url(../img/replace-white.png);
 }
 
 /* ======= navbar styles ======= */
@@ -168,7 +169,8 @@ h1 {
   text-align: center;
   font-weight: 500;
   color: black;
-  background-color: rgb(240, 238, 238);
+  /* background-color: rgb(240, 238, 238); */
+  background-image: url(../img/replace-white.png);
 }
 
 #first-rule {
@@ -236,10 +238,10 @@ figcaption {
   border-top: 5px solid #333;
   border-bottom: 5px solid #333;
 }
-/* 
+
 #about-welcome, #contact-info{
   background-image: url(../img/replace-white.png);
-} */
+}
 
 #about-welcome p {
   margin: 0 auto;
